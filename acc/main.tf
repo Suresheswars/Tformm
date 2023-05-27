@@ -10,7 +10,7 @@
 module "platform_creation" {
   source         = "../modules/vpc"
   cidr           = var.vpc_cidr
-  mytag          = var.devtag
+  mytag          = var.acctag
   public_subnet  = var.public_subnet
   private_subnet = var.private_subnet
   az             = var.az

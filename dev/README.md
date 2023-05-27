@@ -1,3 +1,1 @@
-# Terraform_Suresh
-
-Sample File
+# This helps to learn terraform

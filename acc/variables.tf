@@ -1,6 +1,6 @@
 variable "sgname" {
   type    = string
-  default = "developmentsg"
+  default = "accsg"
 }
 
 variable "sshport" {
@@ -13,9 +13,9 @@ variable "amiid" {
   default = "ami-0a8b4cd432b1c3063"
 }
 
-variable "devtag" {
+variable "acctag" {
   default = {
-    Environment = "DEV"
+    Environment = "ACC"
     Stack_type  = "Infra"
   }
 }
@@ -40,7 +40,7 @@ variable "private_subnet" {
 }
 
 variable "az" {
-  default = ["us-east-1a", "us-east-1b"]
+  default = ["us-west-1b", "us-west-1c"]
 }
 
 variable "firewall_rule" {
@@ -60,10 +60,11 @@ variable "firewall_rule" {
   ]
 }
 
+
 variable "rolename" {
-  default = "devinstancerole"
+  default = "accinstancerole"
 }
 
 variable "profile" {
-  default = "instanceprofile"
+  default = "accprofile"
 }
