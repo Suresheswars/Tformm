@@ -8,7 +8,7 @@
 #}
 
 module "platform_creation" {
-  source         = "../modules/vpc"
+  source         = "modules"
   cidr           = var.vpc_cidr
   mytag          = var.devtag
   public_subnet  = var.public_subnet
